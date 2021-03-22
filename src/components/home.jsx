@@ -6,7 +6,7 @@ import React, {useState} from 'react';
   const api = '34d8c6bebb47f82323b744ead2096372';
   
     function submit() {
-      console.warn(items)
+      console.warn(pnr)
       
       document.title = `You clicked ${pnr} times`;
       
@@ -33,7 +33,7 @@ import React, {useState} from 'react';
             name="user" 
             onChange={event => setPnr(event.target.value)} />
             <button onClick={() => {submit() }} >Login</button>
-            <p>{items.NameEn}</p>
+            <p>{items.Station.NameEn}</p>
        </>
        )
   }
